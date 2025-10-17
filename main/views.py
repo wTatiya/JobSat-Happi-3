@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index(request):
+    """Render the landing page for the Happinometer app."""
+
+    return render(request, "main/index.html")
